@@ -39,6 +39,7 @@ proguard/
 captures/
 
 # IntelliJ
+!capacitor-cordova-android-plugins/cordova.variables.gradle
 *.iml
 .idea/workspace.xml
 .idea/tasks.xml
