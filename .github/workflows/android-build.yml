@@ -32,6 +32,10 @@ jobs:
             ${{ runner.os }}-gradle-
 
       - name: Build APK
+      - name: Make gradlew executable
+        run: chmod +x android/gradlew
+
+      - name: Build APK
         run: cd android && ./gradlew assembleDebug
 
       - name: Upload APK
